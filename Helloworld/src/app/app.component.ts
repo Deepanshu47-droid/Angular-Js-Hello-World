@@ -6,8 +6,13 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'Helloworld';
+  imgUrl = "../assets/BL_logo_square.jpg";
+
+  ngOnInit(): void {
+    this.title = "Hello from BridgeLabz.";
+  }
 }
