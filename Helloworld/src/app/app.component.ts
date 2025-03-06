@@ -27,14 +27,5 @@ export class AppComponent {
   onUserNameChange() {
     this.title = `Hello ${this.userName} from BridgeLabz!`;
   }
-  onInput($event: InputEvent) {
-    this.onUserNameChange()
-    console.log("Change Event Occured!", $event.data);
-    const nameRegex = RegExp('^[A-Z]{1}[a-zA-Z\\s]{2,}$');
-    if (nameRegex.test(this.userName)) {
-      this.nameError = "";
-      return;
-    }
-    this.nameError = " ❌ Name is Incorrect!";
-  }
+
 }
