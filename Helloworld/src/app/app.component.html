@@ -227,7 +227,7 @@
       </svg>
       <h1>{{ title }}</h1>
 
-      <img [src] = "imgUrl"
+      <img [src] = "imgUrl" (click) = "onClick($event)"
         alt = "The Bridgelabz logo: a bridge to Employment through a Lab Works."
       />
 
