@@ -230,9 +230,10 @@
       <img [src] = "imgUrl" (click) = "onClick($event)"
         alt = "The Bridgelabz logo: a bridge to Employment through a Lab Works."
       />
-      <input type="text" [(ngModel)]="userName" (input)="onUserNameChange()" placeholder="Enter your name" />
-
+      <input type="text" [(ngModel)]="userName" (input)="onInput($event)" placeholder="Enter your name.." />
+      <span class = error-output> {{ this.nameError }} </span>
       <p>Hello, {{ this.userName }} from BridgeLabz!</p>
+      
 
       <p>Congratulations! Your app is running. 🎉</p>
     </div>
