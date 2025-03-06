@@ -1,2 +1,5 @@
 # Angular-Js-Hello-World
-UC 3 : Ability To launch BridgeLabz Site in a new Tab on clicking BridgeLabz Logo - Use Event Binding Technique to bind Click Event to Launch  ridgeLabz URL in a new Tab
+UC 4 : To display Hello from BridgeLabz with a user inputted name
+- Make sure to import Form Module needed for Application
+- Bind the Input Element to the userName of the App Component.
+- Make sure it is two way binding so that the change in the value can be reflected in the Hello Message
